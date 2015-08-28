@@ -96,6 +96,9 @@ a:hover {
 .hunter {
   background:linear-gradient(#abd473, #334023);
 }
+.demonhunter {
+  background:linear-gradient(#4dd827, #17400c);
+}
 /* rage */
 .warrior-tank, .warrior-melee, .druid-tank {
   background:linear-gradient(#ff0000, #800000);
@@ -115,6 +118,10 @@ a:hover {
 /* focus */
 .hunter-ranged {
   background:linear-gradient(#ff8040, #804020);
+}
+/* demonic fury */
+.demonhunter-tank, .demonhunter-melee {
+  background:linear-gradient(#9482c9, #5e5280);
 }
 .meter {
   margin:0px;
