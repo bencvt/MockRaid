@@ -6,7 +6,7 @@ See `preview.png` for an example of how the page is rendered. You can easily cha
 
 The git repo is hosted at: https://github.com/bencvt/MockRaid
 
-## Note about art assets
+## Note about art and font assets
 
 Blizzard owns the copyright to the group role icon images (`assets/*.png`). The images are included in this project with Blizzard's explicit permission, per the fansites section on: http://us.blizzard.com/en-us/company/about/legal-faq.html
 

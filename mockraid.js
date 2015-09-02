@@ -3,11 +3,15 @@ var MockRaid = {
     dps: [],
     hps: [],
   },
+  newGroup: function() {
+    var td = $("<td />")
+    $("<div />").addClass("header").text("Group " + ($("#grid td").length + 1)).appendTo(td);
+    td.appendTo("#grid tr");
+    return this;
+  },
   add: function(name, cls, role, dps, hps) {
     if ($("#grid td:last .unit").length >= 5) {
-      var td = $("<td />")
-      $("<div />").addClass("header").text("Group " + ($("#grid td").length + 1)).appendTo(td);
-      td.appendTo("#grid tr");
+      this.newGroup();
     }
     this.meter.dps.push({rate:dps, name:name, cls:cls, role:role});
     this.meter.hps.push({rate:hps, name:name, cls:cls, role:role});
