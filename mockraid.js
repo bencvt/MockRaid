@@ -48,6 +48,8 @@ var MockRaid = {
       meter: {
         dps: [],
         hps: [],
+        players: 0,
+        healers: 0,
       },
       add: function(name, cls, role, dps, hps) {
         if (grid.find("td:last ." + C("unit")).length >= 5) {
@@ -55,6 +57,10 @@ var MockRaid = {
         }
         this.meter.dps.push({rate:dps, name:name, cls:cls, role:role});
         this.meter.hps.push({rate:hps, name:name, cls:cls, role:role});
+        this.meter.players += 1;
+        if (role == "healer") {
+          this.meter.healers += 1;
+        }
         var unit = $("<div />").addClass(C("unit")).addClass(C(cls));
         $("<img />").attr("src", "assets/" + role + ".png").error(function(){$(this).hide();}).addClass(C("role-icon")).appendTo(unit);
         $("<span />").text(name).appendTo(unit);
@@ -98,6 +104,17 @@ var MockRaid = {
           bar.width(width * player.amount / best - 2);
           bar.appendTo(bars);
         });
+        return this;
+      },
+      done: function(width) {
+        // Include a few healers in the damage meters
+        // and a few non-healers in the healing meters.
+        this.loadMeter("dps", this.meter.players - this.meter.healers + 2, width);
+        this.loadMeter("hps", this.meter.healers + 5, width);
+        return this;
+      },
+      addDivs: function(selector) {
+        $(selector).append(grid).append(dps).append(hps);
         return this;
       },
     };
