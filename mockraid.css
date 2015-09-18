@@ -2,37 +2,25 @@
   font-family:Friz Quadrata;
   src:url(assets/FRIZQT__.ttf);
 }
-body {
-  background-color:#666666;
+.mockraid-font {
   font-family:Friz Quadrata,Verdana;
   font-size:10pt;
   color:#ffffff;
-  padding:16px;
   text-shadow:
     1px 1px 1px #000000,1px 1px 1px #000000,1px 1px 1px #000000,
     0px 0px 1px #000000,0px 0px 1px #000000;
 }
-a {
-  color:#fff569;
-  text-decoration:none;
-}
-a:hover {
-  color:#69ccf0;
-  text-decoration:underline;
-}
-#grid {
-}
-#grid td {
+.mockraid-group {
   margin:0px;
   padding:0px;
   vertical-align:top;
 }
-#grid td .header {
+.mockraid-header {
   text-align:center;
   padding-bottom:2px;
   color:#cccccc;
 }
-.unit {
+.mockraid-unit {
   margin:0px;
   padding:2px;
   width:84px;
@@ -45,7 +33,7 @@ a:hover {
     1px 1px 1px #000000,1px 1px 1px #000000,1px 1px 1px #000000,
     0px 0px 1px #000000,0px 0px 1px #000000;
 }
-.power {
+.mockraid-power {
   margin:0px;
   margin-bottom:4px;
   margin-right:2px;
@@ -59,79 +47,78 @@ a:hover {
   /* default: mana */
   background:linear-gradient(#0000ff, #000080);
 }
-.roleIcon {
+.mockraid-role-icon {
   vertical-align:top;
   margin-right:2px;
   width:16px;
   height:16px;
 }
-.warrior {
+.mockraid-warrior {
   background:linear-gradient(#c79c6e, #403223);
 }
-.deathknight {
+.mockraid-deathknight {
   background:linear-gradient(#c41f3b, #400a13);
 }
-.paladin {
+.mockraid-paladin {
   background:linear-gradient(#f58cba, #402430);
 }
-.monk {
+.mockraid-monk {
   background:linear-gradient(#00ff96, #004026);
 }
-.priest {
+.mockraid-priest {
   background:linear-gradient(#ffffff, #404040);
 }
-.shaman {
+.mockraid-shaman {
   background:linear-gradient(#0070de, #002040);
 }
-.druid {
+.mockraid-druid {
   background:linear-gradient(#ff7d0a, #401f02);
 }
-.rogue {
+.mockraid-rogue {
   background:linear-gradient(#fff569, #403d1a);
 }
-.mage {
+.mockraid-mage {
   background:linear-gradient(#69ccf0, #1c3640);
 }
-.warlock {
+.mockraid-warlock {
   background:linear-gradient(#9482c9, #2f2940);
 }
-.hunter {
+.mockraid-hunter {
   background:linear-gradient(#abd473, #334023);
 }
-.demonhunter {
+.mockraid-demonhunter {
   background:linear-gradient(#4dd827, #17400c);
 }
 /* rage */
-.warrior-tank, .warrior-melee, .druid-tank {
+.mockraid-warrior-tank, .mockraid-warrior-melee, .mockraid-druid-tank {
   background:linear-gradient(#ff0000, #800000);
 }
 /* runic power */
-.deathknight-tank, .deathknight-melee {
+.mockraid-deathknight-tank, .mockraid-deathknight-melee {
   background:linear-gradient(#00d1ff, #006880);
 }
 /* energy */
-.monk-tank, .monk-melee, .druid-melee, .rogue-melee {
+.mockraid-monk-tank, .mockraid-monk-melee, .mockraid-druid-melee, .mockraid-rogue-melee {
   background:linear-gradient(#ffff00, #808000);
 }
 /* focus */
-.hunter-ranged {
+.mockraid-hunter-ranged {
   background:linear-gradient(#ff8040, #804020);
 }
 /* demonic fury */
-.demonhunter-tank, .demonhunter-melee {
+.mockraid-demonhunter-tank, .mockraid-demonhunter-melee {
   /*background:linear-gradient(#9482c9, #5e5280);*/
   background:linear-gradient(#00d1ff, #006880);
 }
-.meter {
-  margin:0px;
-  margin-top:32px;
+.mockraid-meter {
+  margin:4px 0px 4px 0px;
   padding:0px;
   width:366px;
   border:solid black 1px;
   border-top-left-radius:6px;
   border-top-right-radius:6px;
 }
-.meter .title {
+.mockraid-meter-header {
   margin:0px;
   padding:3px 0px 3px 3px;
   border:none;
@@ -139,31 +126,27 @@ a:hover {
   border-top-right-radius:6px;
   background:linear-gradient(#ff0000, #800000);
 }
-.meter .bars {
+.mockraid-meter-bars {
   background:rgba(0,0,0,0.5);
 }
-.meter .bars .bar {
+.mockraid-meter-bar {
   border:solid black 1px;
   border-left:none;
   border-top:none;
   padding:1px;
   height:16px;
 }
-.meter .bars .bar .rank {
+.mockraid-meter-rank {
   position:absolute;
   width:22px;
   text-align:right;
 }
-.meter .bars .bar .name {
+.mockraid-meter-name {
   position:absolute;
   margin-left:26px;
 }
-.meter .bars .bar .amount {
+.mockraid-meter-amount {
   position:absolute;
   width:200px;
-  margin-left:162px;
   text-align:right;
-}
-#generatedby {
-  margin-bottom:32px;
 }
