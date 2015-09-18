@@ -68,6 +68,10 @@ var MockRaid = {
         $("<div />").addClass(C("power")).addClass(C(cls + "-" + role)).appendTo(grid.find("td:last"));
         return this;
       },
+      newGroup: function() {
+        newGroup();
+        return this;
+      },
       loadMeter: function(which, cap, width) {
         cmp = function(a, b) {
           var d = b.rate - a.rate;
