@@ -87,7 +87,7 @@
   background:linear-gradient(#abd473, #334023);
 }
 .mockraid-demonhunter {
-  background:linear-gradient(#4dd827, #17400c);
+  background:linear-gradient(#a330c9, #340f40);
 }
 /* rage */
 .mockraid-warrior-tank, .mockraid-warrior-melee, .mockraid-druid-tank {
@@ -107,8 +107,8 @@
 }
 /* demonic fury */
 .mockraid-demonhunter-tank, .mockraid-demonhunter-melee {
-  /*background:linear-gradient(#9482c9, #5e5280);*/
-  background:linear-gradient(#00d1ff, #006880);
+  background:linear-gradient(#9482c9, #5e5280);
+  /*background:linear-gradient(#00d1ff, #006880);*/
 }
 .mockraid-meter {
   margin:4px 0px 4px 0px;
